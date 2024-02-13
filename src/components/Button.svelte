@@ -6,11 +6,11 @@
 
   switch (type) {
     case 'primary':
-      buttonCSS = 'bg-blue-600 hover:bg-blue-500';
+      buttonCSS = 'bg-blue-500 hover:bg-[#33c9fe]';
       break;
 
     case 'submit':
-      buttonCSS = 'bg-green-600 hover:bg-green-500';
+      buttonCSS = 'bg-[#00384A] hover:bg-[#004158]';
       break;
 
     case 'warning':
@@ -26,7 +26,7 @@
       break;
 
     default:
-      buttonCSS = 'bg-blue-600 hover:bg-blue-500';
+      buttonCSS = 'bg-blue-500 hover:bg-[#33c9fe]';
       break;
   }
 </script>

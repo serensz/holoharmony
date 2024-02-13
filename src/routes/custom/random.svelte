@@ -55,17 +55,17 @@
     <Footer custom />
   {/if}
 {:else}
-  <div class="w-full w-10/12 max-w-2xl mx-auto my-5">
-    <div class="text-center mx-auto w-full text-blue-100 mb-2">
+  <div class="w-full w-10/12 max-w-xl mx-auto my-5">
+    <div class="text-xl text-center mx-auto w-full text-[#33c9de] mb-3">
       paste the link to any spotify playlist below
     </div>
     <input
       bind:value={playlistUrl}
-      class="p-2 border-2 w-full text-gray-400 rounded-sm border-gray-600 bg-gray-900 hover:border-gray-400 focus:border-gray-400 outline-none transition-all duration-200"
+      class="p-2 border-2 w-full text-black rounded-sm border-[#33c9fe] bg-gray-100 hover:border-[#4d9eed] focus:border-[#75e5ef] outline-none transition-all duration-200 placeholder-gray-400"
       name="spotify playlist input"
       placeholder="spotify playlist link"
     />
-    <div class="w-full mx-auto text-center my-4">
+    <div class="text-lg w-full mx-auto text-center my-4 ">
       <Button on:click={() => startCustom()} title="start custom audial" type="submit"
         >start your custom audial
       </Button>

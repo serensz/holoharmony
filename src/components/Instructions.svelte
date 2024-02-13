@@ -15,7 +15,7 @@
   />
   <!--  make this absolute and prevent changing the page-->
   <div class="absolute px-4 w-full h-full md:h-auto mx-auto z-50">
-    <div class="rounded-lg w-full max-w-2xl mx-auto mt-20 bg-gray-700 p-3 opacity-100 shadow">
+    <div class="rounded-lg w-full max-w-2xl mx-auto mt-20 bg-[#00384A] p-3 opacity-100 shadow">
       <h1 class="text-3xl mx-auto text-center">instructions</h1>
       <div class="p-4">
         <ul class="text-left">
@@ -113,7 +113,7 @@
                 stroke-width="24"
               />
             </svg>
-            for audial shuffle.
+            for playlist shuffle.
           </li>
         </ul>
       </div>

@@ -73,21 +73,7 @@
 </script>
 
 <div class="w-8/12 mx-auto mt-2">
-  <h1 class="text-4xl text-white">official stats</h1>
-  <div>
-    <ul class="ml-4 mt-2">
-      <li class="text-blue-500">
-        {officialAttempts.length}/{daysBetweenDates(new Date(), FIRST_DAY)} audials attempted.
-      </li>
-      <li class="text-green-500">
-        {officialAttempts.filter(a => a.correct).length} correct guesses.
-      </li>
-      <li class="text-amber-400">{getCorrectArtistGuesses()} correct artist guesses.</li>
-      <li class="text-red-600">{getIncorrectGuesses()} incorrect guesses.</li>
-      <li class="text-gray-400">{getSkippedGuesses()} skips.</li>
-    </ul>
-  </div>
-  <h1 class="text-4xl text-white mt-3">unofficial stats</h1>
+  <h1 class="text-4xl text-[#4d9eed] mt-3">Stats</h1>
   <div>
     <ul class="ml-4 mt-2">
       <li class="text-gray-300">

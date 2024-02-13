@@ -7,6 +7,9 @@
   import LoadingIndicator from '$components/LoadingIndicator.svelte';
   import type { Attempt } from '$src/types';
 
+  // Define your Spotify playlist ID
+  const spotifyPlaylistId = '6ydbkXuwFxveUsypdN1lgm';
+
   onMount(async () => {
     // reset the temporary attempt because this is a random game
     temporaryAttempt.set(<Attempt>{
@@ -16,7 +19,8 @@
       date: new Date(),
       correct: false
     });
-    await loadGame('', true);
+    // Pass the Spotify playlist ID to the loadGame function
+    await loadGame(spotifyPlaylistId, true);
   });
 </script>
 
@@ -26,7 +30,8 @@
   {:else}
     <div class="max-w-screen-md mx-auto">
       <div class={`text-center p-3`}>
-        <Game custom={false} random />
+        <!-- Pass the Spotify playlist ID to the Game component -->
+        <Game custom={false} random/>
       </div>
     </div>
     <Footer custom />

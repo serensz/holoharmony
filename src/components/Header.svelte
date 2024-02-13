@@ -6,40 +6,7 @@
   import { loadGame } from '../lib/util';
   import type { Attempt } from '../types';
 
-  let decade;
-  let decadeColor;
-  onMount(() => {
-    switch (new Date().getDay()) {
-      case 0:
-        decade = '50s';
-        decadeColor = 'yellow-400';
-        break;
-      case 1:
-        decade = '80s';
-        decadeColor = 'teal-500';
-        break;
-      case 2:
-        decade = '2000s';
-        decadeColor = 'purple-500';
-        break;
-      case 3:
-        decade = '70s';
-        decadeColor = 'emerald-500';
-        break;
-      case 4:
-        decade = '60s';
-        decadeColor = 'orange-500';
-        break;
-      case 5:
-        decade = '2010s';
-        decadeColor = 'indigo-500';
-        break;
-      case 6:
-        decade = '90s';
-        decadeColor = 'cyan-500';
-        break;
-    }
-  });
+  
 
   export const enableRandom = async () => {
     isRandom.set(true);
@@ -65,7 +32,7 @@
 </script>
 
 <div>
-  <header class='border-b border-gray-500'>
+  <header class='border-b border-[#4d9eed] bg-[#5edcee]'>
     <div class='max-w-screen-md mx-auto '>
       <div class='flex justify-evenly p-3 items-center'>
         <div class='flex flex-1'>
@@ -147,25 +114,20 @@
         </div>
         <div>
           <h1
-            class='text-3xl font-bold flex-grow text-center flex-1 cursor-pointer text-white relative hover:underline underline-offset-1 decoration-blue-500 hover:text-blue-500'
+            class='text-4xl font-bold flex-grow text-center flex-1 cursor-pointer text-white relative hover: decoration-[#4d9eed] hover:text-[#4d9eed]'
             on:click={() => goto('/')}
           >
-            audial
+          HoloHarmony
             {#if $page.url.href.includes('custom') && $isRandom}
-              <span class='absolute rotate-45 text-green-500 text-sm -right-12 -top-1'>custom</span>
-              <span class='absolute rotate-45 text-red-600 text-sm -right-10 top-2'>shuffle</span>
+              <span class='absolute rotate-45 text-blue-600 text-sm -right-12 -top-1'>custom</span>
+              <span class='absolute rotate-45 text-[#535C91] text-sm -right-10 top-2'>shuffle</span>
             {:else if $page.url.href.includes('custom')}
-              <span class='absolute rotate-45 text-green-500 text-sm -right-9'>custom</span>
+              <span class='absolute rotate-45 text-blue-600 text-sm -right-9'>custom</span>
             {:else if $isRandom}
-              <span class='absolute rotate-45 text-red-600 text-sm -right-9'>shuffle</span>
+              <span class='absolute rotate-45 text-[#535C91] text-sm -right-9'>shuffle</span>
             {:else if $page.url.href.includes('stats')}
-              <span class='absolute rotate-45 text-amber-400 text-sm -right-7'>stats</span>
-            {:else if decade}
-              <span
-                class={`absolute rotate-45 text-${decadeColor} text-sm -right-${
-                  decade.length > 3 ? '7' : '2'
-                }`}>{decade}</span
-              >
+              <span class='absolute rotate-45 text-teal-800 text-sm -right-7'>stats</span>
+            
             {/if}
           </h1>
         </div>

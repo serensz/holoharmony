@@ -9,7 +9,7 @@
 
 body {
   font-family: 'League Spartan', sans-serif;
-  background: theme('colors.gray.800');
+  background: theme('colors.white');
   color: theme('colors.gray.200');
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .autocomplete-list {
-  background: theme('colors.gray.900') !important;
+  background: theme('colors.gray.100') !important;
   padding: theme('padding.1') theme('padding.2') !important;
   max-height: 40vh !important;
 }

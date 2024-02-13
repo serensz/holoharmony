@@ -60,7 +60,7 @@
       on:click={() => {
         window.open(`https://open.spotify.com/track/${currentSong.get().id}`, '_blank').focus();
       }}
-      class={`cursor-pointer border-blue-600 border-2 h-10 p-2 my-2 w-full text-left rounded-sm bg-gray-900 overflow-ellipsis whitespace-nowrap overflow-hidden`}
+      class={`text-black cursor-pointer border-blue-600 border-2 h-10 p-2 my-2 w-full text-left rounded-sm bg-gray-100 overflow-ellipsis whitespace-nowrap overflow-hidden`}
     >
       {currentSong.get().name} by {currentSong.get().artist}
     </div>
@@ -73,7 +73,7 @@
   <span> {generateEmojis()}</span>
   {#if random}
     <div class='mt-4'>
-      <Button on:click={newRandomGame} type='primary'>Shuffle Again</Button>
+      <Button title ='Shuffle' on:click={newRandomGame} type='submit'>Shuffle Again</Button>
     </div>
   {:else}
     <div class='w-full mx-auto my-2'>

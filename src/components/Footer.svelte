@@ -107,7 +107,7 @@
   };
 </script>
 
-<footer class="border-t border-white bottom-0 w-full fixed bg-gray-800">
+<footer class="border-t border-white bottom-0 w-full fixed bg-[#00384A]">
   <div class="border-b">
     <AttemptVisualizer {attempt} />
   </div>
